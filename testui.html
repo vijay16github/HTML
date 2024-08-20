@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #0056b3;
+    }
+
+    header {
+      background-color: lightpink;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    nav {
+      background: #444;
+      color: #fff;
+      padding: 0.5rem 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .main-box {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+    }
+
+
+    .slider {
+
+      width: 350px;
+      height: 500px;
+      box-shadow: 0 0 2px 2px;
+      background-color: #9e9a9a;
+      border-radius: 10px;
+
+    }
+
+    .square {
+
+      width: 1250px;
+      height: 500px;
+      background-color: lightblue;
+      /* position: absolute; */
+      top: 80%;
+      left: 20%;
+      /* transform: translate(0%, -50%); */
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      color: greenyellow;
+      font-size: 200%;
+
+    }
+
+    .rectangle {
+      width: 1250px;
+      height: 200px;
+      font-size: 300%;
+
+    }
+
+    /* .login-container
+{
+    width: 350px;
+  height:500px ;
+  box-shadow: 0 0 2px 2px;
+     background-color: fuchsia;
+     border-radius: 10px;
+} */
+
+    /*   
+  .login-container {
+    width: 300px;
+    margin: 100px auto;
+    height: 500px;
+    padding: 20px;
+    background-color:khaki;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .form-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color:darkseagreen;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color:gold;
+    font-size: 14px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #22ff00;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
+#contact{
+    color:aqua;
+     */
+
+    .BOX1 {
+      width: 300px;
+      height: 300px;
+      box-shadow: 0 0 2px 2px;
+      background-color: #9e9a9a;
+      border-radius: 10px;
+    }
+
+    .BOX2 {
+      width: 300px;
+      height: 300px;
+      box-shadow: 0 0 2px 2px;
+      background-color: #9e9a9a;
+      border-radius: 10px;
+    }
+
+    .BOX3 {
+      width: 300px;
+      height: 300px;
+      box-shadow: 0 0 2px 2px;
+      background-color: #9e9a9a;
+      border-radius: 10px;
+    }
+    .big-box {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+    }
+    .BOX4
+    {
+      width: 300px;
+      height: 300px;
+      box-shadow: 0 0 2px 2px;
+      background-color: #9e9a9a;
+      border-radius: 10px;
+    }
+    .BOX5
+    {
+      width: 300px;
+      height: 300px;
+      box-shadow: 0 0 2px 2px;
+      background-color: #9e9a9a;
+      border-radius: 10px;
+    }
+    .BOX6
+    {
+      width: 300px;
+      height: 300px;
+      box-shadow: 0 0 2px 2px;
+      background-color: #9e9a9a;
+      border-radius: 10px;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="square">
+
+    <h1>Best Business Services</h1>
+  </div>
+  <div class="rectangle">
+    <h2>About Us</h2>
+  </div>
+  <div class="main-box">
+    <div class="BOX1">
+
+    </div>
+    <div class="BOX2">
+
+    </div>
+    <div class="BOX3">
+
+    </div>
+
+  </div>
+
+  <div class="big-box">
+    <div class="BOX4">
+
+    </div>
+    <div class="BOX5">
+
+    </div>
+
+    <div class="BOX6">
+
+    </div>
+  </div>
+
+  <main>
+
+    <section id="home">
+      <h2>Home</h2>
+      <p>This is the home section.</p>
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>This is the about section.</p>
+    </section>
+    <section id="services">
+      <h2>Services</h2>
+      <p>This is the services section.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>This is the contact section.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 My Website</p>
+  </footer>
+</body>
+
+</html>
