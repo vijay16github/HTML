@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function objectProjection(sourceObject, prototypeObject) 
+        {
+            const projectedObject = {};
+
+
+            for (var key in prototypeObject) {
+                if (sourceObject.hasOwnProperty(key)) {
+                    projectedObject[key] = sourceObject[key];
+
+                }
+            }
+            return projectedObject;
+        }
+        var sourceObject={
+            name:"AJ Styles",
+            age:30,
+            email:"ajstyles@gmail.com"
+
+        };
+
+        var prototypeObject={
+            name:"",
+            age:0,
+        };
+
+
+        const projectedObject=objectProjection(sourceObject,prototypeObject);
+        console.log("Projected Object:",projectedObject);
+
+    </script>
+</head>
+
+<body>
+    <input type="button"  value="Submit"   onclick="objectProjection()"/>
+</body>
+
+</html>

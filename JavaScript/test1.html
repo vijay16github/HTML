@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question 2</title>
+        <style>
+           .page
+           {
+              max-width: 400px;
+              margin: 0 auto;
+              padding: 20px;
+              border: 1px solid dimgrey;
+              border-radius: 5px;
+
+           }
+
+           .box
+           {
+              margin-bottom: 15px;
+           }
+           .box label{
+
+            display: block;
+            margin-bottom: 5px;
+           }
+
+
+        </style>
+    </head>
+    <body>
+     <div class="page">
+        <form id="print-table">
+            <div class="box">
+           <label for="iteration">Iteration:</label> 
+           <input type="number" id="iteration" placeholder="Enter Number">
+        </div>
+
+        <div class="box">
+            <label for="number">Number:</label>
+            <input type="number" id="number" placeholder="Enter Number">
+        </div>
+
+        <div class="box">
+            <label for="result">Result:</label>
+            <input type="number" id="result" readonly placeholder="RESULT">
+        </div>
+
+        <div class="box">
+            <button type="button" onclick="CalculateTable()">CalculateTable</button>
+        </div>
+     </div>
+
+    </form>
+     <script>
+        function CalculateTable()
+        {
+            var iteration=document.getElementById('iteration').value;
+            var number=document.getElementById('number').value;
+
+
+            var result= iteration * number;
+
+            document.getElementById('result').value= result;
+
+        }
+    
+     </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function GetDifference()
+        {
+            Date.prototype.daysTo=function(futureDate) 
+            {
+                var oneDay=24*60*60*1000;
+                console.log(oneDay);
+                var firstDate=new Date();
+                console.log(firstDate);
+                var time= firstDate.getTime();
+                var secondDate=futureDate.getTime();
+                var diffDays=Math.round(Math.abs((firstDate-secondDate)/oneDay));
+                return diffDays;
+
+            }
+            var currentDate=new Date();
+            var futureDate=new Date();
+
+            futureDate.setDate(currentDate.getDate()+9);
+            console.log(currentDate.daysTo(futureDate));
+            console.log(futureDate);
+        }
+    </script>
+</head>
+<body>
+    <input type="button"  value="Date"   onclick="GetDifference()"/>
+    
+</body>
+</html>

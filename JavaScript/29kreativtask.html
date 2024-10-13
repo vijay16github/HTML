@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>
+            postman
+        </title>
+        <script type="text/javascript">
+          // Import crypto-js library for MD5 hashing
+const CryptoJS = require("crypto-js");
+
+// Function to generate MD5 hash
+function generateMD5Hash(name) {
+    return CryptoJS.MD5(name).toString();
+}
+
+// Function to send POST request
+async function sendPostRequest() {
+    const name = "JohnDoe";  // Random name
+    const md5Hash = generateMD5Hash(name);  // Generate MD5 hash of the name
+
+    const url = "https://dev.29kreativ.com/recruitment/levels/";
+
+    // Create the body as x-www-form-urlencoded
+    const formBody = new URLSearchParams();
+    formBody.append("name", name);
+    formBody.append("code", md5Hash);
+
+    try {
+        const response = await fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+                "Authorization": 'Bearer ${md5Hash}'
+            },
+            body: formBody.toString()
+        });
+
+        // Check if response is OK
+        if (!response.ok) {
+            throw new Error('HTTP error! Status: ${response.status}');
+        }
+
+        // Read and log the response
+        const result = await response.json();
+        console.log("Response: ", result);
+
+    } catch (error) {
+        console.error("Error:", error);
+    }
+}
+
+// Call the function
+sendPostRequest();
+        </script>
+    </head>
+</html>

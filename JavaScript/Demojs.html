@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn
+        {
+            width: 400px;
+            height: 40px;
+            border-radius: 25px;
+        }
+    </style>
+    <script type="text/javascript">
+    
+
+        // let v=10;
+        // let r=45;
+        // let f=v*r;
+        // document.write("Multiplication is\n" +f); variable declaratiom
+        // if(v>r)
+        // {
+        //     document.write("\tv is greater");
+        // }
+        // else
+        // {
+        //     document.write('\tr is greater');
+        // }
+        // for(var t=1;t<=10;t++)
+        // {
+        //     document.write("\tHey I am Javascript");
+        // }loopig statement
+        
+        function show()
+        {
+            alert("EveryThing is Linked");
+        }
+        
+        function see()
+        {
+            alert("Greatness Is Contagious");
+            document.getElementById("b").style.background="teal";
+        }
+        function display()
+        {
+            document.getElementById("b").style.background="khaki";
+        }
+    </script>
+</head>
+<body>
+    <input type="submit" name="s" value="show message here" class="btn" onmouseover="show()"/>
+    <input type="submit" name="s" id="b" value="click here" class="btn" onmouseover="see()" onmouseout="display()"/>
+   
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <style>
+        .container {
+            margin: 20px;
+        }
+        .heading {
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="addHeading()">Add Heading</button>
+        <div id="headingContainer"></div>
+    </div>
+
+    <script>
+        function addHeading() {
+            
+            var newHeading = document.createElement('h1');
+            
+            
+            newHeading.textContent = 'This is a new heading!';
+            
+            
+            var container = document.getElementById('headingContainer');
+            
+
+            container.appendChild(newHeading);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.container
+{
+    background-color: aquamarine;
+    color: black;
+    padding: 20px;
+}
+
+.title
+{
+    text-align: center;
+    color: coral;
+}
+
+.content
+{
+    background-color: darkorange;
+    padding: 20px;
+    margin: 30px;
+}
+
+.action
+{
+    padding: 30px;
+    background-color: lightcyan;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

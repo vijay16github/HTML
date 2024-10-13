@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script type="text/javascript">
+         display=function()
+         {
+            var str=prompt("enter the value");
+            alert("After Input  "+str);
+         }
+         function show()
+         {
+            var result=confirm("Do you Want to close");
+            // alert(result);
+            if(result)
+            {
+                alert("ok button is pressed");
+            }
+            else
+            {
+                alert("Cancel button is pressed");
+            }
+         }
+    </script>
+</head>
+<body>
+    <input type="submit" name="s" value="Display Here!" onclick="display()"/>
+    <input type="submit" name="s" value="Show Here!" onclick="show()"/>
+</body>
+</html>

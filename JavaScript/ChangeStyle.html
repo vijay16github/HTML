@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangeStyle</title>
+    <script type="text/JavaScript">
+        function changestyle()
+        {
+            first_H1=document.getElementById("first");
+
+            first_H1.style.color="red";
+
+            second_H1=document.getElementById("second");
+
+            second_H1.style.color="green";
+
+            
+        }
+        function changeBackcolor()
+        {
+            first_H1.style.backgroundColor="yellow";
+            second_H1.style.backgroundColor="pink";
+        }
+    </script>
+</head>
+<body> 
+    <h1 id="first">Welcome TO JavaScript</h1>
+    <h1 id="second">Second H1 Tag</h1>
+    <button type="submit" onclick="changestyle(),changeBackcolor()">
+    change Style
+    </button>
+    
+</body>
+</html>

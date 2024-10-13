@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Word Break in div block</title>
+    <style>
+        div {
+            background-color: cadetblue;
+            height: 230px;
+            width: 340px;
+            word-break: break-all;
+            /* overflow:hidden; */
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        Word-Break Container-The word break property specifies how words should break reaching the end of line It
+        defines the lines break rules,Usingthesepropertythelinesthatdon'tfitsintthecontentboxwillbreakatacertainpoint
+        Break-all=Itinsertstheword-breakbetweenthecharacterinordertopreventwordoverflowwhenthisvalueisappliedthebrowserbreaktheselinesatanypointitcanbreakthewordfromthemiddleifitistoolongtofitandcomesattheendofthelineitdoesnotapplyhyphens
+        Normal=Thistextwillbrokenatspacesandhyphensandiftherearenosuitablebreakpointsthenthewordmayoverflowtheconatinerthistextshouldnotbreakwithinthewordbacause'word-break'issetto'normal'.
+        KEEP-all=tHISisaLONGWORDtahtwillnotbreakatallevenifthecontainer'swidthistoonarrowtofittheentirewordthistextshouldnotbreakwithinthewordbecause'word-break'issetto'keep-all'.
+    </div>
+</body>
+
+</html>

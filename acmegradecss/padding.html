@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <style>
+            .parent
+            {
+                background-color: bisque;
+                width:fit-content;
+                /* width: 150px; */
+                /* height: 80px; */
+                font-size: 25px;
+                padding: 30px;
+                text-align: center;
+                vertical-align: middle;
+                margin: 20px;
+            }
+            .parent:nth-child(2)
+            {
+                padding: 0;
+                background-color: hotpink;
+                padding-top: 50px;
+                padding-right: 50px;
+            }
+
+            .parent:nth-child(3)
+            {
+                background-color: chartreuse;
+                padding: 0;
+                padding-bottom: 50px;
+                padding-left: 50px;
+            }
+
+            .parent:nth-child(4)
+            {
+                background-color: lightslategray;
+                /* top right bottom left  */
+                padding: 0 70px 60px 0;
+            }
+
+         </style>
+    </head>
+    <body>
+       
+        <div class="parent">
+            Welcome
+        </div>
+        
+        <div class="parent">
+            Welcome
+        </div>
+        
+        <div class="parent">
+            Welcome
+        </div>
+        
+        <div class="parent">
+            Welcome
+        </div>
+    </body>
+</html>

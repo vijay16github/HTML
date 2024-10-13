@@ -1,0 +1,262 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e3d8b;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    
+    margin-top: 20%;
+    margin-right: 30%;
+    /* justify-content: center; */
+}
+
+/* Header Section */
+/* .header {
+    background: url('wallpaperflare.com_wallpaper\ \(2\).jpg') no-repeat center center/cover;
+    color: rgb(158, 17, 118);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+.header{
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    justify-content: space-between;
+    background-image:url(slider5.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.header .head1{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown; */
+    background-color: rgba(128, 128, 128, 0.7);
+    flex-basis: 49%;
+    
+    
+}
+ .header .head2{
+    top: 0;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(222, 144, 144); */
+    background-color: rgba(128, 128, 128, 0.457);
+    flex-basis: 49%;
+}
+.head2 ul{
+    list-style-type: mone;
+   
+    
+}
+.head2 ul li{
+    padding: 30px;
+    display: inline;
+    margin-top: 10px;
+}
+.head2 ul li a{
+    color: black;
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 200;
+}
+
+.header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-buttons a {
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color:chocolate;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+
+.services {
+    padding: 50px 0;
+    background-color:cadetblue;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service {
+    background:wheat;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.service h3 {
+    margin: 15px 0;
+}
+
+.btn-small {
+    display: inline-block;
+    background-color: #007bff;
+    color:fuchsia;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+.about {
+    padding: 50px 0;
+    text-align: center;
+    background-color: darkorange;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.about img {
+    max-width: 400px;
+    width: 100%;
+}
+
+
+.success-stories {
+    padding: 50px 0;
+    background-color:tomato;
+    text-align: center;
+}
+
+.success-stories h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.clients img {
+    width: 150px;
+    object-fit: contain;
+    margin: 10px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background: white;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial h4 {
+    margin-top: 15px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color:steelblue;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color:salmon;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: aquamarine;
+    
+}
+.footer .footer-middle p
+{
+    color:chartreuse;
+}
+
+.footer p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: burlywood;
+}

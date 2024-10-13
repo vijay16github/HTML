@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>regular expression application</title>
+        <script type="text/javascript">
+            function validateNumber(str)
+            {
+                let pattern=/^[0-9]+$/;
+                let result=str.match(pattern);
+                if(result==null || str.length!=4)
+            {
+                document.getElementById("n").innerHTML="invalid contact";
+
+            }
+            else
+            {
+                document.getElementById("n").innerHTML="";
+            }
+            }
+        </script>
+    </head>
+    <body>
+    <input type="text" name="name" value="" style="width:400px;height:40px;" onkeyup="validateNumber(this.value)"/><br/><br/> 
+    <span id="n"></span>   
+    </body>
+</html>

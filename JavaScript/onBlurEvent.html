@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+          <title>
+ onblur event-when cursor exit from html control then get executed 
+ onfocus event-this event executed when cursor enter in textfield            
+          </title>
+          <script type="text/javascript">
+            function blurDemo()
+            {
+                alert("blur event get executed");
+            }
+            function focusDemo()
+            {
+                alert("focus event get executed");
+            }
+
+          </script>
+    </head>
+    <body>
+          <input type="text" name="n" value=" "style="width:400px;height:60px;" onblur="blurDemo()"/><br/><br/>
+          <input type="text" name="n" value=" "style="width:400px;height:60px" onfocus="focusDemo()"/><br/><br/>
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function GetDifference()
+        {
+            function orderedSales(sales)
+            {
+                return sales.map(s =>({ ...s, Total: s.amount * s.quantity}))
+                .sort((a,b)=> b.Total-a.Total);
+            }
+            var sales=[
+                { amount: 10000, quantity: 10},
+                { amount: 11000, quantity: 20},
+                { amount: 1000, quantity: 30}
+
+        ]
+
+        var orderedSalesArray = orderedSales(sales);
+
+        console.log(orderedSalesArray);
+        }
+    </script>
+</head>
+<body>
+    <input type="button"  value="Submit"   onclick="GetDifference()"/>
+</body>
+</html>

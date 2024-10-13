@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            let g=new Array();
+            g.push(38);
+            g.push(52);
+            g.push(27);
+            g.push(13);
+            g.push(75);
+            document.write("<h1>before delete</h1>");
+            for(var y=0;y<g.length;y++)
+            {
+                document.write(g[y]+"<br>");
+            }
+            let result=g.pop();
+            document.write("<h1>Deleted value from array"+result);
+            document.write("<h1>after delete</h1>");
+            for(var y=0;y<g.length;y++) 
+            {
+                document.write(g[y]+"<br>");
+            }   
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

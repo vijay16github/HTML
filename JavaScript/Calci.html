@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+we want to design basic arthimetic Calculator           
+        </title>
+        <script type="text/javascript">
+            var a,b,c;
+            function calAdd()
+            {
+               a=document.getElementById("f").value;
+               b=document.getElementById("s").value;
+               c=parseInt(a)+parseInt(b);
+               document.getElementById("h").innerHTML="Addition is"+c;
+            }
+            function calMul()
+            {
+                a=document.getElementById("f").value;
+                b=document.getElementById("s").value;
+                c=parseInt(a)*parseInt(b);
+                var heading=document.getElementById("h");
+                heading.innerHTML="Multiplication is"+c;
+            }
+            function calSub()
+            {
+                a=document.getElementById("f").value;
+                b=document.getElementById("s").value;
+                c=parseInt(a)-parseInt(b);
+                var heading=document.getElementById("h");
+                heading.innerHTML="Substraction is"+c;
+            }
+            function calDiv()
+            {
+                a=document.getElementById("f").value;
+                b=document.getElementById("s").value;
+                c=parseInt(a)/parseInt(b);
+                document.getElementById("h").innerHTML="Division is"+c;
+            }
+        </script>
+    </head>
+    <body>
+    <input type="text" name="first" value=" " id="f"/><br/><br/>
+    <input type="text" name="second" value=" " id="s"/><br/><br/>
+    <input type="button" name="s" value="Calculate Addition" onclick="calAdd()"/>&nbsp;&nbsp;
+    <input type="button" name="s" value="Calculate Multiplication" onclick="calMul()"/>&nbsp;&nbsp;
+    <input type="button" name="s" value="Calculate Substraction" onclick="calSub()"/>&nbsp;&nbsp;
+    <input type="button" name="s" value="Calculate Division" onclick="calDiv()"/><br/><br/> 
+    <h1 id="h"></h1>  
+
+    </body>
+</html>
